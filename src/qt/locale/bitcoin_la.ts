@@ -118,8 +118,8 @@
         <translation>Recreans indicem frustorum in disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Cureoptedcoins address</source>
-        <translation>Mitte nummos ad inscriptionem Cureoptedcoins</translation>
+        <source>Send coins to a Cureoptedcoin address</source>
+        <translation>Mitte nummos ad inscriptionem Cureoptedcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -142,8 +142,8 @@
         <translation>&amp;Verifica nuntium...</translation>
     </message>
     <message>
-        <source>Cureoptedcoins</source>
-        <translation>Cureoptedcoins</translation>
+        <source>Cureoptedcoin</source>
+        <translation>Cureoptedcoin</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -166,12 +166,12 @@
         <translation>Cifra claves privatas quae cassidili tui sunt</translation>
     </message>
     <message>
-        <source>Sign messages with your Cureoptedcoins addresses to prove you own them</source>
-        <translation>Signa nuntios cum tuis inscriptionibus Cureoptedcoins ut demonstres te eas possidere</translation>
+        <source>Sign messages with your Cureoptedcoin addresses to prove you own them</source>
+        <translation>Signa nuntios cum tuis inscriptionibus Cureoptedcoin ut demonstres te eas possidere</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Cureoptedcoins addresses</source>
-        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Cureoptedcoins</translation>
+        <source>Verify messages to ensure they were signed with specified Cureoptedcoin addresses</source>
+        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Cureoptedcoin</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -297,8 +297,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Cureoptedcoins</source>
-        <translation>Cureoptedcoins</translation>
+        <source>Cureoptedcoin</source>
+        <translation>Cureoptedcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -346,8 +346,8 @@
         <translation>Cassidile</translation>
     </message>
     <message>
-        <source>Automatically open the Cureoptedcoins client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aperi per se portam clientis Cureoptedcoins in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
+        <source>Automatically open the Cureoptedcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aperi per se portam clientis Cureoptedcoin in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -429,8 +429,8 @@
         <translation>Schema</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Cureoptedcoins network after a connection is established, but this process has not completed yet.</source>
-        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Cureoptedcoins postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Cureoptedcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Cureoptedcoin postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -679,8 +679,8 @@
         <translation>Copia signationem in latibulum systematis</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Cureoptedcoins address</source>
-        <translation>Signa nuntium ut demonstres hanc inscriptionem Cureoptedcoins a te possessa esse</translation>
+        <source>Sign the message to prove you own this Cureoptedcoin address</source>
+        <translation>Signa nuntium ut demonstres hanc inscriptionem Cureoptedcoin a te possessa esse</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -699,8 +699,8 @@
         <translation>&amp;Verifica Nuntium</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Cureoptedcoins address</source>
-        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione Cureoptedcoins</translation>
+        <source>Verify the message to ensure it was signed with the specified Cureoptedcoin address</source>
+        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione Cureoptedcoin</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -755,8 +755,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Cureoptedcoins Core</source>
-        <translation>Cureoptedcoins Nucleus</translation>
+        <source>Cureoptedcoin Core</source>
+        <translation>Cureoptedcoin Nucleus</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>

@@ -1,43 +1,43 @@
-Cureoptedcoins Core integration/staging tree
+Cureoptedcoin Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/cureoptedcoins-project/cureoptedcoins.svg?branch=master)](https://travis-ci.org/cureoptedcoins-project/cureoptedcoins)
+[![Build Status](https://travis-ci.org/cureoptedcoin-project/cureoptedcoin.svg?branch=master)](https://travis-ci.org/cureoptedcoin-project/cureoptedcoin)
 
-https://cureoptedcoins.org
+https://cureoptedcoin.org
 
-What is Cureoptedcoins?
+What is Cureoptedcoin?
 ----------------
 
-Cureoptedcoins is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. Cureoptedcoins uses peer-to-peer technology to operate
+Cureoptedcoin is an experimental digital currency that enables instant payments to
+anyone, anywhere in the world. Cureoptedcoin uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Cureoptedcoins Core is the name of open source
+out collectively by the network. Cureoptedcoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Cureoptedcoins Core software, see [https://cureoptedcoins.org](https://cureoptedcoins.org).
+the Cureoptedcoin Core software, see [https://cureoptedcoin.org](https://cureoptedcoin.org).
 
 License
 -------
 
-Cureoptedcoins Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Cureoptedcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/cureoptedcoins-project/cureoptedcoins/tags) are created
-regularly to indicate new official, stable release versions of Cureoptedcoins Core.
+completely stable. [Tags](https://github.com/cureoptedcoin-project/cureoptedcoin/tags) are created
+regularly to indicate new official, stable release versions of Cureoptedcoin Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)
 and useful hints for developers can be found in [doc/developer-notes.md](doc/developer-notes.md).
 
-The developer [mailing list](https://groups.google.com/forum/#!forum/cureoptedcoins-dev)
+The developer [mailing list](https://groups.google.com/forum/#!forum/cureoptedcoin-dev)
 should be used to discuss complicated or controversial changes before working
 on a patch set.
 
-Developer IRC can be found on Freenode at #cureoptedcoins-dev.
+Developer IRC can be found on Freenode at #cureoptedcoin-dev.
 
 Testing
 -------
@@ -71,7 +71,7 @@ Translations
 ------------
 
 We only accept translation fixes that are submitted through [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
-Translations are converted to Cureoptedcoins periodically.
+Translations are converted to Cureoptedcoin periodically.
 
 Translations are periodically pulled from Transifex and merged into the git repository. See the
 [translation process](doc/translation_process.md) for details on how this works.

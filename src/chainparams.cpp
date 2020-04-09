@@ -94,7 +94,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x1c8b55db251385ebaa2a549d1b1873362c706c3302e1561a33be5f4282f967bb"); //1683528
+        consensus.defaultAssumeValid = uint256S("0x1c8b55db251385ebaa2a549d1b1873362c706c3302e1561a33be5f4282f967bb"); //0
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -228,8 +228,8 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.emplace_back("testnet-seed.cureoptedcoinstools.com");
-        vSeeds.emplace_back("seed-b.cureoptedcoins.loshan.co.uk");
+        vSeeds.emplace_back("testnet-seed.cureoptedcointools.com");
+        vSeeds.emplace_back("seed-b.cureoptedcoin.loshan.co.uk");
         vSeeds.emplace_back("dnsseed-testnet.thrasher.io");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);

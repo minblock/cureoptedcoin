@@ -1,1 +1,1 @@
-The list of assets used in the cureoptedcoins source and their attribution can now be found in [contrib/debian/copyright](../contrib/debian/copyright).
+The list of assets used in the cureoptedcoin source and their attribution can now be found in [contrib/debian/copyright](../contrib/debian/copyright).

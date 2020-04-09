@@ -66,12 +66,12 @@
         <translation>Alınan Adresler</translation>
     </message>
     <message>
-        <source>These are your Cureoptedcoins addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Bunlar ödeme göndermek için gereken Cureoptedcoins adreslerinizdir. Para göndermeden önce her zaman miktarı ve alıcı adresi kontrol edin.</translation>
+        <source>These are your Cureoptedcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Bunlar ödeme göndermek için gereken Cureoptedcoin adreslerinizdir. Para göndermeden önce her zaman miktarı ve alıcı adresi kontrol edin.</translation>
     </message>
     <message>
-        <source>These are your Cureoptedcoins addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Bunlar ödeme almak için kullanılacak Cureoptedcoins adreslerinizdir. Her işlem için yeni bir ödeme alma adresi kullanılması tavsiye edilir.</translation>
+        <source>These are your Cureoptedcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Bunlar ödeme almak için kullanılacak Cureoptedcoin adreslerinizdir. Her işlem için yeni bir ödeme alma adresi kullanılması tavsiye edilir.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Cüzdan Şifrelemesini Onaylayın</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CUREOPTEDCOINSS&lt;/b&gt;!</source>
-        <translation>Uyarı: Eğer cüzdanınızı şifreleyip parolanızı kaybederseniz (unutursanız) , &lt;b&gt;BÜTÜN CUREOPTEDCOINS'LERINIZI KAYBEDECEKSINIZ&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CUREOPTEDCOINS&lt;/b&gt;!</source>
+        <translation>Uyarı: Eğer cüzdanınızı şifreleyip parolanızı kaybederseniz (unutursanız) , &lt;b&gt;BÜTÜN CUREOPTEDCOIN'LERINIZI KAYBEDECEKSINIZ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -286,8 +286,8 @@
         <translation>Bloklar disk üzerinde yeniden indeksleniyor...</translation>
     </message>
     <message>
-        <source>Send coins to a Cureoptedcoins address</source>
-        <translation>Cureoptedcoins adresine madeni para gönderin</translation>
+        <source>Send coins to a Cureoptedcoin address</source>
+        <translation>Cureoptedcoin adresine madeni para gönderin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -302,8 +302,8 @@
         <translation>Onay mesajı...</translation>
     </message>
     <message>
-        <source>Cureoptedcoins</source>
-        <translation>Cureoptedcoins
+        <source>Cureoptedcoin</source>
+        <translation>Cureoptedcoin
 </translation>
     </message>
     <message>
@@ -458,8 +458,8 @@
         <translation>Gönderim adresini düzenleyin</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Cureoptedcoins address.</source>
-        <translation>Girilen adres "%1" Cureoptedcoins adresiyle eşleşmiyor.</translation>
+        <source>The entered address "%1" is not a valid Cureoptedcoin address.</source>
+        <translation>Girilen adres "%1" Cureoptedcoin adresiyle eşleşmiyor.</translation>
     </message>
     <message>
         <source>New key generation failed.</source>
@@ -495,8 +495,8 @@
         <translation>Hoş geldiniz</translation>
     </message>
     <message>
-        <source>Cureoptedcoins</source>
-        <translation>Cureoptedcoins
+        <source>Cureoptedcoin</source>
+        <translation>Cureoptedcoin
 </translation>
     </message>
     <message>
@@ -628,7 +628,7 @@
         <translation>Form</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Cureoptedcoins network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Cureoptedcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Gösterilen bilgi geçerli olmayabilir. Bağlantı tekrar sağlandıktan sonra cüzdanınız otomatik olarak senkronize olacaktır. Henüz senkronize olma işlemi tamamlanmadı.</translation>
     </message>
     <message>
@@ -709,8 +709,8 @@
 <context>
     <name>QObject</name>
     <message>
-        <source>Enter a Cureoptedcoins address (e.g. %1)</source>
-        <translation>Cureoptedcoins adresinizi girin (örneğin %1)</translation>
+        <source>Enter a Cureoptedcoin address (e.g. %1)</source>
+        <translation>Cureoptedcoin adresinizi girin (örneğin %1)</translation>
     </message>
     <message>
         <source>N/A</source>
@@ -1094,8 +1094,8 @@
         <translation>Coin gönderimini onaylayın</translation>
     </message>
     <message>
-        <source>Warning: Invalid Cureoptedcoins address</source>
-        <translation>Uyarı: Hatalı Cureoptedcoins adresi</translation>
+        <source>Warning: Invalid Cureoptedcoin address</source>
+        <translation>Uyarı: Hatalı Cureoptedcoin adresi</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1390,8 +1390,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Cureoptedcoins Core</source>
-        <translation>Cureoptedcoins Çekirdeği</translation>
+        <source>Cureoptedcoin Core</source>
+        <translation>Cureoptedcoin Çekirdeği</translation>
     </message>
     <message>
         <source>Copyright (C) %i-%i</source>

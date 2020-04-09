@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Cureoptedcoins"
-            VALUE "FileDescription",    "cureoptedcoins-wallet (CLI tool for " PACKAGE_NAME " wallets)"
+            VALUE "CompanyName",        "Cureoptedcoin"
+            VALUE "FileDescription",    "cureoptedcoin-wallet (CLI tool for " PACKAGE_NAME " wallets)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "cureoptedcoins-wallet"
+            VALUE "InternalName",       "cureoptedcoin-wallet"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "cureoptedcoins-wallet.exe"
-            VALUE "ProductName",        "cureoptedcoins-wallet"
+            VALUE "OriginalFilename",   "cureoptedcoin-wallet.exe"
+            VALUE "ProductName",        "cureoptedcoin-wallet"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

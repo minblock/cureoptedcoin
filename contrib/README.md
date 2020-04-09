@@ -13,7 +13,7 @@ Construct a linear, no-fork, best version of the blockchain.
 
 ### [Qos](/contrib/qos) ###
 
-A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Cureoptedcoins network. This means one can have an always-on cureoptedcoinsd instance running, and another local cureoptedcoinsd/cureoptedcoins-qt instance which connects to this node and receives blocks from it.
+A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Cureoptedcoin network. This means one can have an always-on cureoptedcoind instance running, and another local cureoptedcoind/cureoptedcoin-qt instance which connects to this node and receives blocks from it.
 
 ### [Seeds](/contrib/seeds) ###
 Utility to generate the pnSeed[] array that is compiled into the client.
@@ -30,7 +30,7 @@ All other packaging related files can be found in the [bitcoin-core/packaging](h
 Files used during the gitian build process. For more information about gitian, see the [the Bitcoin Core documentation repository](https://github.com/bitcoin-core/docs).
 
 ### [Gitian-keys](/contrib/gitian-keys)
-PGP keys used for signing Cureoptedcoins Core [Gitian release](/doc/release-process.md) results.
+PGP keys used for signing Cureoptedcoin Core [Gitian release](/doc/release-process.md) results.
 
 ### [MacDeploy](/contrib/macdeploy) ###
 Scripts and notes for Mac builds. 
@@ -42,7 +42,7 @@ Test and Verify Tools
 ---------------------
 
 ### [TestGen](/contrib/testgen) ###
-Utilities to generate test vectors for the data-driven Cureoptedcoins tests.
+Utilities to generate test vectors for the data-driven Cureoptedcoin tests.
 
 ### [Verify Binaries](/contrib/verifybinaries) ###
-This script attempts to download and verify the signature file SHA256SUMS.asc from cureoptedcoins.org.
+This script attempts to download and verify the signature file SHA256SUMS.asc from cureoptedcoin.org.

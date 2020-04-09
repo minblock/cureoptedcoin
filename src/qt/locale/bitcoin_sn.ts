@@ -90,8 +90,8 @@
         <translation>Vhura &amp;URI</translation>
     </message>
     <message>
-        <source>Cureoptedcoins</source>
-        <translation>Cureoptedcoins</translation>
+        <source>Cureoptedcoin</source>
+        <translation>Cureoptedcoin</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -153,8 +153,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Cureoptedcoins</source>
-        <translation>Cureoptedcoins</translation>
+        <source>Cureoptedcoin</source>
+        <translation>Cureoptedcoin</translation>
     </message>
     </context>
 <context>
@@ -182,8 +182,8 @@
         <translation>Marii </translation>
     </message>
     <message>
-        <source>Enter a Cureoptedcoins address (e.g. %1)</source>
-        <translation>Nyora kero ye Cureoptedcoins (sekuti %1)</translation>
+        <source>Enter a Cureoptedcoin address (e.g. %1)</source>
+        <translation>Nyora kero ye Cureoptedcoin (sekuti %1)</translation>
     </message>
     <message>
         <source>%1 d</source>

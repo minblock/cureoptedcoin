@@ -62,12 +62,12 @@
         <translation>Ontvangstadres</translation>
     </message>
     <message>
-        <source>These are your Cureoptedcoins addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw Cureoptedcoins adressen voor het versturen van betalingen. Controleer altijd het bedrag en het ontvangstadres voordat u munten verstuurd.</translation>
+        <source>These are your Cureoptedcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw Cureoptedcoin adressen voor het versturen van betalingen. Controleer altijd het bedrag en het ontvangstadres voordat u munten verstuurd.</translation>
     </message>
     <message>
-        <source>These are your Cureoptedcoins addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw Cureoptedcoins adressen voor het ontvangen van betalingen. Het wordt aanbevolen om voor elke transactie een nieuw ontvangstadres te gebruiken.</translation>
+        <source>These are your Cureoptedcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw Cureoptedcoin adressen voor het ontvangen van betalingen. Het wordt aanbevolen om voor elke transactie een nieuw ontvangstadres te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,8 +168,8 @@
         <translation>Bevestig portemonnee versleuteling</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CUREOPTEDCOINSS&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als je je portemonnee versleutelt en je wachtwoord kwijtraakt, raak je &lt;b&gt;AL JE CUREOPTEDCOINSS KWIJT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CUREOPTEDCOINS&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als je je portemonnee versleutelt en je wachtwoord kwijtraakt, raak je &lt;b&gt;AL JE CUREOPTEDCOINS KWIJT&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -322,8 +322,8 @@
         <translation>Blokken op schijf herindexeren...</translation>
     </message>
     <message>
-        <source>Send coins to a Cureoptedcoins address</source>
-        <translation>Verstuur coins naar een Cureoptedcoins adres</translation>
+        <source>Send coins to a Cureoptedcoin address</source>
+        <translation>Verstuur coins naar een Cureoptedcoin adres</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -346,8 +346,8 @@
         <translation>&amp;Bericht verifiëren</translation>
     </message>
     <message>
-        <source>Cureoptedcoins</source>
-        <translation>Cureoptedcoins</translation>
+        <source>Cureoptedcoin</source>
+        <translation>Cureoptedcoin</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -370,12 +370,12 @@
         <translation>Versleutel de privé sleutels die bij je portemonnee horen</translation>
     </message>
     <message>
-        <source>Sign messages with your Cureoptedcoins addresses to prove you own them</source>
-        <translation>Signeer berichten met je Cureoptedcoins adres om te bewijzen dat ze van jou zijn</translation>
+        <source>Sign messages with your Cureoptedcoin addresses to prove you own them</source>
+        <translation>Signeer berichten met je Cureoptedcoin adres om te bewijzen dat ze van jou zijn</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Cureoptedcoins addresses</source>
-        <translation>Verifieer berichten om er zeker van te zijn dat ze met specifieke Cureoptedcoins adressen ondertekent zijn</translation>
+        <source>Verify messages to ensure they were signed with specified Cureoptedcoin addresses</source>
+        <translation>Verifieer berichten om er zeker van te zijn dat ze met specifieke Cureoptedcoin adressen ondertekent zijn</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -394,8 +394,8 @@
         <translation>Tabs taakbalk</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and cureoptedcoins: URIs)</source>
-        <translation>Betalingen aanvragen (genereert QR codes en cureoptedcoins: URI's)</translation>
+        <source>Request payments (generates QR codes and cureoptedcoin: URIs)</source>
+        <translation>Betalingen aanvragen (genereert QR codes en cureoptedcoin: URI's)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -406,8 +406,8 @@
         <translation>Toon de lijst van gebruikte ontvangst adressen en labels</translation>
     </message>
     <message>
-        <source>Open a cureoptedcoins: URI or payment request</source>
-        <translation>Open een cureoptedcoins: URI of betaalverzoek</translation>
+        <source>Open a cureoptedcoin: URI or payment request</source>
+        <translation>Open een cureoptedcoin: URI of betaalverzoek</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -450,8 +450,8 @@
         <translation>Up to date</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Cureoptedcoins command-line options</source>
-        <translation>Open het %1 help bericht om een lijst met Cureoptedcoins commando-regel opties te krijgen</translation>
+        <source>Show the %1 help message to get a list with possible Cureoptedcoin command-line options</source>
+        <translation>Open het %1 help bericht om een lijst met Cureoptedcoin commando-regel opties te krijgen</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -520,8 +520,8 @@
         <translation>Portemonnee is &lt;b&gt;versleuteld&lt;/b&gt; op dit moment &lt;b&gt;vergrendeld&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Cureoptedcoins can no longer continue safely and will quit.</source>
-        <translation>Een fatale error is voorgekomen. Cureoptedcoins kan niet langer veilig verder gaan en sluit daardoor af.</translation>
+        <source>A fatal error occurred. Cureoptedcoin can no longer continue safely and will quit.</source>
+        <translation>Een fatale error is voorgekomen. Cureoptedcoin kan niet langer veilig verder gaan en sluit daardoor af.</translation>
     </message>
 </context>
 <context>
@@ -671,8 +671,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Cureoptedcoins</source>
-        <translation>Cureoptedcoins</translation>
+        <source>Cureoptedcoin</source>
+        <translation>Cureoptedcoin</translation>
     </message>
     <message>
         <source>Error</source>

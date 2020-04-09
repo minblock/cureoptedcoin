@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.cureoptedcoins.Cureoptedcoins-Qt";
+        return @"org.cureoptedcoin.Cureoptedcoin-Qt";
     } else {
         return [self __bundleIdentifier];
     }

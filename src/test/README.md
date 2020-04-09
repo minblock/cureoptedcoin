@@ -5,42 +5,42 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with `make check`.
 
-To run the cureoptedcoinsd tests manually, launch `src/test/test_cureoptedcoins`. To recompile
+To run the cureoptedcoind tests manually, launch `src/test/test_cureoptedcoin`. To recompile
 after a test file was modified, run `make` and then run the test again. If you
 modify a non-test file, use `make -C src/test` to recompile only what's needed
-to run the cureoptedcoinsd tests.
+to run the cureoptedcoind tests.
 
-To add more cureoptedcoinsd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more cureoptedcoind tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the `test/` directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the cureoptedcoins-qt tests manually, launch `src/qt/test/test_cureoptedcoins-qt`
+To run the cureoptedcoin-qt tests manually, launch `src/qt/test/test_cureoptedcoin-qt`
 
-To add more cureoptedcoins-qt tests, add them to the `src/qt/test/` directory and
+To add more cureoptedcoin-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.
 
 ### Running individual tests
 
-test_cureoptedcoins has some built-in command-line arguments; for
+test_cureoptedcoin has some built-in command-line arguments; for
 example, to run just the getarg_tests verbosely:
 
-    test_cureoptedcoins --log_level=all --run_test=getarg_tests
+    test_cureoptedcoin --log_level=all --run_test=getarg_tests
 
 ... or to run just the doubledash test:
 
-    test_cureoptedcoins --run_test=getarg_tests/doubledash
+    test_cureoptedcoin --run_test=getarg_tests/doubledash
 
-Run `test_cureoptedcoins --help` for the full list.
+Run `test_cureoptedcoin --help` for the full list.
 
 ### Note on adding test cases
 
 The sources in this directory are unit test cases.  Boost includes a
-unit testing framework, and since cureoptedcoins already uses boost, it makes
+unit testing framework, and since cureoptedcoin already uses boost, it makes
 sense to simply use this framework rather than require developers to
 configure some other framework (we want as few impediments to creating
 unit tests as possible).
 
-The build system is setup to compile an executable called "test_cureoptedcoins"
+The build system is setup to compile an executable called "test_cureoptedcoin"
 that runs all of the unit tests.  The main source file is called
 test_bitcoin.cpp. To add a new unit test file to our test suite you need
 to add the file to `src/Makefile.test.include`. The pattern is to create

@@ -151,8 +151,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Send coins to a Cureoptedcoins address</source>
-        <translation>ផ្ញើកាក់ទៅកាន់ អាសយដ្ឋាន Cureoptedcoins មួយ</translation>
+        <source>Send coins to a Cureoptedcoin address</source>
+        <translation>ផ្ញើកាក់ទៅកាន់ អាសយដ្ឋាន Cureoptedcoin មួយ</translation>
     </message>
     </context>
 <context>

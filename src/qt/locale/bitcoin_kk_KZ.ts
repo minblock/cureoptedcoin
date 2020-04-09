@@ -70,7 +70,7 @@
         <translation>Құпия сөзді өзгерту</translation>
     </message>
     <message>
-        <source>Cureoptedcoins</source>
+        <source>Cureoptedcoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -165,7 +165,7 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Cureoptedcoins</source>
+        <source>Cureoptedcoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>

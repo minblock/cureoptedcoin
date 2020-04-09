@@ -1,14 +1,14 @@
 Benchmarking
 ============
 
-Cureoptedcoins Core has an internal benchmarking framework, with benchmarks
+Cureoptedcoin Core has an internal benchmarking framework, with benchmarks
 for cryptographic algorithms (e.g. SHA1, SHA256, SHA512, RIPEMD160), as well as the rolling bloom filter.
 
 Running
 ---------------------
-After compiling Cureoptedcoins-core, the benchmarks can be run with:
+After compiling Cureoptedcoin-core, the benchmarks can be run with:
 
-    src/bench/bench_Cureoptedcoins
+    src/bench/bench_Cureoptedcoin
 
 The output will look similar to:
 ```
@@ -43,7 +43,7 @@ Help
 ---------------------
 `-?` will print a list of options and exit:
 
-    src/bench/bench_Cureoptedcoins -?
+    src/bench/bench_Cureoptedcoin -?
 
 Notes
 ---------------------

@@ -66,12 +66,12 @@
         <translation>Ricevaj adresoj</translation>
     </message>
     <message>
-        <source>These are your Cureoptedcoins addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Jen viaj Cureoptedcoins-adresoj por sendi pagojn. Zorge kontrolu la sumon kaj la alsendan adreson antaŭ ol sendi.</translation>
+        <source>These are your Cureoptedcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Jen viaj Cureoptedcoin-adresoj por sendi pagojn. Zorge kontrolu la sumon kaj la alsendan adreson antaŭ ol sendi.</translation>
     </message>
     <message>
-        <source>These are your Cureoptedcoins addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Jen viaj cureoptedcoinsj adresoj por ricevi pagojn. Estas konsilinde uzi apartan ricevan adreson por ĉiu transakcio.</translation>
+        <source>These are your Cureoptedcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Jen viaj cureoptedcoinj adresoj por ricevi pagojn. Estas konsilinde uzi apartan ricevan adreson por ĉiu transakcio.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,7 +176,7 @@
         <translation>Konfirmo de ĉifrado de la monujo</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CUREOPTEDCOINSS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CUREOPTEDCOINS&lt;/b&gt;!</source>
         <translation>Atentu! Se vi ĉifras vian monujon kaj perdas la pasfrazon, vi &lt;b&gt;PERDOS LA TUTON DE VIA BITMONO&lt;b&gt;!</translation>
     </message>
     <message>
@@ -298,8 +298,8 @@
         <translation>Reindeksado de blokoj sur disko...</translation>
     </message>
     <message>
-        <source>Send coins to a Cureoptedcoins address</source>
-        <translation>Sendi monon al Cureoptedcoins-adreso</translation>
+        <source>Send coins to a Cureoptedcoin address</source>
+        <translation>Sendi monon al Cureoptedcoin-adreso</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -322,8 +322,8 @@
         <translation>&amp;Kontroli mesaĝon...</translation>
     </message>
     <message>
-        <source>Cureoptedcoins</source>
-        <translation>Cureoptedcoins</translation>
+        <source>Cureoptedcoin</source>
+        <translation>Cureoptedcoin</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -346,12 +346,12 @@
         <translation>Ĉifri la privatajn ŝlosilojn de via monujo</translation>
     </message>
     <message>
-        <source>Sign messages with your Cureoptedcoins addresses to prove you own them</source>
-        <translation>Subskribi mesaĝojn per via Cureoptedcoins-adresoj por pravigi, ke vi estas la posedanto</translation>
+        <source>Sign messages with your Cureoptedcoin addresses to prove you own them</source>
+        <translation>Subskribi mesaĝojn per via Cureoptedcoin-adresoj por pravigi, ke vi estas la posedanto</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Cureoptedcoins addresses</source>
-        <translation>Kontroli mesaĝojn por kontroli ĉu ili estas subskribitaj per specifaj Cureoptedcoins-adresoj</translation>
+        <source>Verify messages to ensure they were signed with specified Cureoptedcoin addresses</source>
+        <translation>Kontroli mesaĝojn por kontroli ĉu ili estas subskribitaj per specifaj Cureoptedcoin-adresoj</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -370,8 +370,8 @@
         <translation>Langeto-breto</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and cureoptedcoins: URIs)</source>
-        <translation>Peti pagon (kreas QR-kodojn kaj URI-ojn kun prefikso cureoptedcoins:)</translation>
+        <source>Request payments (generates QR codes and cureoptedcoin: URIs)</source>
+        <translation>Peti pagon (kreas QR-kodojn kaj URI-ojn kun prefikso cureoptedcoin:)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -382,8 +382,8 @@
         <translation>Vidigi la liston de uzitaj ricevaj adresoj kaj etikedoj</translation>
     </message>
     <message>
-        <source>Open a cureoptedcoins: URI or payment request</source>
-        <translation>Malfermi cureoptedcoins:-URI-on aŭ pagpeton</translation>
+        <source>Open a cureoptedcoin: URI or payment request</source>
+        <translation>Malfermi cureoptedcoin:-URI-on aŭ pagpeton</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -615,8 +615,8 @@
         <translation>Uzi alian dosierujon por datumoj:</translation>
     </message>
     <message>
-        <source>Cureoptedcoins</source>
-        <translation>Cureoptedcoins</translation>
+        <source>Cureoptedcoin</source>
+        <translation>Cureoptedcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -692,8 +692,8 @@
         <translation>Fakulo</translation>
     </message>
     <message>
-        <source>Automatically open the Cureoptedcoins client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aŭtomate malfermi la kursilan pordon por Cureoptedcoins. Tio funkcias nur se via kursilo havas la UPnP-funkcion, kaj se tiu ĉi estas ŝaltita.</translation>
+        <source>Automatically open the Cureoptedcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aŭtomate malfermi la kursilan pordon por Cureoptedcoin. Tio funkcias nur se via kursilo havas la UPnP-funkcion, kaj se tiu ĉi estas ŝaltita.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -749,7 +749,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Elekti la defaŭltan manieron por montri cureoptedcoinsjn sumojn en la interfaco, kaj kiam vi sendos bitmonon.</translation>
+        <translation>Elekti la defaŭltan manieron por montri cureoptedcoinjn sumojn en la interfaco, kaj kiam vi sendos bitmonon.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -791,8 +791,8 @@
         <translation>Formularo</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Cureoptedcoins network after a connection is established, but this process has not completed yet.</source>
-        <translation>Eblas, ke la informoj videblaj ĉi tie estas eksdataj. Via monujo aŭtomate sinkoniĝas kun la cureoptedcoins reto kiam ili konektiĝas, sed tiu procezo ankoraŭ ne finfariĝis.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Cureoptedcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Eblas, ke la informoj videblaj ĉi tie estas eksdataj. Via monujo aŭtomate sinkoniĝas kun la cureoptedcoin reto kiam ili konektiĝas, sed tiu procezo ankoraŭ ne finfariĝis.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -1150,7 +1150,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Sendi Cureoptedcoinsn</translation>
+        <translation>Sendi Cureoptedcoinn</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1289,8 +1289,8 @@
         <translation>Kreo de transakcio fiaskis!</translation>
     </message>
     <message>
-        <source>Warning: Invalid Cureoptedcoins address</source>
-        <translation>Averto: Nevalida Cureoptedcoins-adreso</translation>
+        <source>Warning: Invalid Cureoptedcoin address</source>
+        <translation>Averto: Nevalida Cureoptedcoin-adreso</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1405,8 +1405,8 @@
         <translation>Kopii la aktualan subskribon al la tondejo</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Cureoptedcoins address</source>
-        <translation>Subskribi la mesaĝon por pravigi, ke vi estas la posedanto de tiu Cureoptedcoins-adreso</translation>
+        <source>Sign the message to prove you own this Cureoptedcoin address</source>
+        <translation>Subskribi la mesaĝon por pravigi, ke vi estas la posedanto de tiu Cureoptedcoin-adreso</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1425,8 +1425,8 @@
         <translation>&amp;Kontroli Mesaĝon</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Cureoptedcoins address</source>
-        <translation>Kontroli la mesaĝon por pravigi, ke ĝi ja estas subskribita per la specifa Cureoptedcoins-adreso</translation>
+        <source>Verify the message to ensure it was signed with the specified Cureoptedcoin address</source>
+        <translation>Kontroli la mesaĝon por pravigi, ke ĝi ja estas subskribita per la specifa Cureoptedcoin-adreso</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1832,7 +1832,7 @@
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Sendi Cureoptedcoinsn</translation>
+        <translation>Sendi Cureoptedcoinn</translation>
     </message>
     </context>
 <context>
@@ -1865,8 +1865,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Cureoptedcoins Core</source>
-        <translation>Kerno de Cureoptedcoins</translation>
+        <source>Cureoptedcoin Core</source>
+        <translation>Kerno de Cureoptedcoin</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>

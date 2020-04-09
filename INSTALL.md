@@ -1,5 +1,5 @@
-Building Cureoptedcoins
+Building Cureoptedcoin
 ================
 
 See doc/build-*.md for instructions on building the various
-elements of the Cureoptedcoins Core reference implementation of Cureoptedcoins.
+elements of the Cureoptedcoin Core reference implementation of Cureoptedcoin.

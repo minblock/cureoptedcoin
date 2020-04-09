@@ -1,6 +1,6 @@
 ### TestGen ###
 
-Utilities to generate test vectors for the data-driven Cureoptedcoins tests.
+Utilities to generate test vectors for the data-driven Cureoptedcoin tests.
 
 Usage: 
 

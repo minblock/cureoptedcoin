@@ -47,11 +47,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Choisissez une adresse où envoyer les cureoptedcoinss</translation>
+        <translation>Choisissez une adresse où envoyer les cureoptedcoins</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Choisissez une adresse où recevoir les cureoptedcoinss</translation>
+        <translation>Choisissez une adresse où recevoir les cureoptedcoins</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -66,12 +66,12 @@
         <translation>Adresses de réception</translation>
     </message>
     <message>
-        <source>These are your Cureoptedcoins addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ceci sont vos addresses Cureoptedcoins pour envoyer vos paiements. Il faut toujours verifier les montants et l'addresse de reception avant de valider la transaction.</translation>
+        <source>These are your Cureoptedcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ceci sont vos addresses Cureoptedcoin pour envoyer vos paiements. Il faut toujours verifier les montants et l'addresse de reception avant de valider la transaction.</translation>
     </message>
     <message>
-        <source>These are your Cureoptedcoins addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ceci sont vos addresses Cureoptedcoins pour recevoir vos paiements. Il est recommandé d'utiliser une nouvelle adresse de recepetion pour chaque transaction</translation>
+        <source>These are your Cureoptedcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Ceci sont vos addresses Cureoptedcoin pour recevoir vos paiements. Il est recommandé d'utiliser une nouvelle adresse de recepetion pour chaque transaction</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Confirmer le chiffrement du porte-monnaie</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CUREOPTEDCOINSS&lt;/b&gt;!</source>
-        <translation>Attention : Si vous chiffrez votre portefeuille et que vous perdez votre mot de passe vous &lt;b&gt; PERDREZ TOUS VOS CUREOPTEDCOINSS&lt;/b&gt; !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CUREOPTEDCOINS&lt;/b&gt;!</source>
+        <translation>Attention : Si vous chiffrez votre portefeuille et que vous perdez votre mot de passe vous &lt;b&gt; PERDREZ TOUS VOS CUREOPTEDCOINS&lt;/b&gt; !</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -188,8 +188,8 @@
         <translation>Portefeuille chiffré</translation>
     </message>
     <message>
-        <source>Your wallet is now encrypted. Remember that encrypting your wallet cannot fully protect your cureoptedcoinss from being stolen by malware infecting your computer.</source>
-        <translation>Le porte-monnaie a été chiffré. N'oubliez pas que le chiffrement de votre porte-monnaie ne peut pas entièrement protéger vos cureoptedcoinss contre le vol par un logiciel malveillant qui infecterait votre ordinateur.</translation>
+        <source>Your wallet is now encrypted. Remember that encrypting your wallet cannot fully protect your cureoptedcoins from being stolen by malware infecting your computer.</source>
+        <translation>Le porte-monnaie a été chiffré. N'oubliez pas que le chiffrement de votre porte-monnaie ne peut pas entièrement protéger vos cureoptedcoins contre le vol par un logiciel malveillant qui infecterait votre ordinateur.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -342,8 +342,8 @@
         <translation>Le proxy est &lt;b&gt;activé&lt;/b&gt; : %1</translation>
     </message>
     <message>
-        <source>Send coins to a Cureoptedcoins address</source>
-        <translation>Envoyer des pièces à une adresse Cureoptedcoins</translation>
+        <source>Send coins to a Cureoptedcoin address</source>
+        <translation>Envoyer des pièces à une adresse Cureoptedcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -366,8 +366,8 @@
         <translation>&amp;Vérification du message</translation>
     </message>
     <message>
-        <source>Cureoptedcoins</source>
-        <translation>Cureoptedcoins</translation>
+        <source>Cureoptedcoin</source>
+        <translation>Cureoptedcoin</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -390,12 +390,12 @@
         <translation>Crypter les clé privées qui appartiennent votre portefeuille</translation>
     </message>
     <message>
-        <source>Sign messages with your Cureoptedcoins addresses to prove you own them</source>
-        <translation>Signer vos messages avec vos adresses Cureoptedcoins pour prouver que vous les détenez</translation>
+        <source>Sign messages with your Cureoptedcoin addresses to prove you own them</source>
+        <translation>Signer vos messages avec vos adresses Cureoptedcoin pour prouver que vous les détenez</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Cureoptedcoins addresses</source>
-        <translation>Vérifier les messages pour s'assurer qu'ils soient signés avec les adresses Cureoptedcoins spécifiées</translation>
+        <source>Verify messages to ensure they were signed with specified Cureoptedcoin addresses</source>
+        <translation>Vérifier les messages pour s'assurer qu'ils soient signés avec les adresses Cureoptedcoin spécifiées</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -414,8 +414,8 @@
         <translation>Barre d'outils des onglets</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and cureoptedcoins: URIs)</source>
-        <translation>Demander des paiements (générer QR codes et cureoptedcoins: URIs)</translation>
+        <source>Request payments (generates QR codes and cureoptedcoin: URIs)</source>
+        <translation>Demander des paiements (générer QR codes et cureoptedcoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -426,16 +426,16 @@
         <translation>Afficher la liste des labels et adresses de réception utilisées</translation>
     </message>
     <message>
-        <source>Open a cureoptedcoins: URI or payment request</source>
-        <translation>Ouvrir un cureoptedcoins: URI ou demande de paiement</translation>
+        <source>Open a cureoptedcoin: URI or payment request</source>
+        <translation>Ouvrir un cureoptedcoin: URI ou demande de paiement</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Options de ligne de commande</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Cureoptedcoins network</source>
-        <translation><numerusform>%n connexion active avec le réseau Cureoptedcoins</numerusform><numerusform>%n connexions actives avec le réseau Cureoptedcoins</numerusform></translation>
+        <source>%n active connection(s) to Cureoptedcoin network</source>
+        <translation><numerusform>%n connexion active avec le réseau Cureoptedcoin</numerusform><numerusform>%n connexions actives avec le réseau Cureoptedcoin</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -498,8 +498,8 @@
         <translation>Fermer portefeuille</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Cureoptedcoins command-line options</source>
-        <translation>Afficher le %1 message d'aide pour récupérer une liste des options de ligne de commande Cureoptedcoins</translation>
+        <source>Show the %1 help message to get a list with possible Cureoptedcoin command-line options</source>
+        <translation>Afficher le %1 message d'aide pour récupérer une liste des options de ligne de commande Cureoptedcoin</translation>
     </message>
     <message>
         <source>default wallet</source>
@@ -590,8 +590,8 @@
         <translation>Le porte-monnaie est &lt;b&gt;chiffré&lt;/b&gt; et est actuellement &lt;b&gt;verrouillé&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Cureoptedcoins can no longer continue safely and will quit.</source>
-        <translation>Une erreur fatale a eu lieu. Cureoptedcoins ne peut plus continuer en toute sécurité et va s'éteindre</translation>
+        <source>A fatal error occurred. Cureoptedcoin can no longer continue safely and will quit.</source>
+        <translation>Une erreur fatale a eu lieu. Cureoptedcoin ne peut plus continuer en toute sécurité et va s'éteindre</translation>
     </message>
 </context>
 <context>
@@ -780,8 +780,8 @@
         <translation>Éditer l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Cureoptedcoins address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse Cureoptedcoins valide.</translation>
+        <source>The entered address "%1" is not a valid Cureoptedcoin address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse Cureoptedcoin valide.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -853,8 +853,8 @@
         <translation>Utiliser votre propre répertoire</translation>
     </message>
     <message>
-        <source>Cureoptedcoins</source>
-        <translation>Cureoptedcoins</translation>
+        <source>Cureoptedcoin</source>
+        <translation>Cureoptedcoin</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -946,8 +946,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically open the Cureoptedcoins client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir le port du client Cureoptedcoins automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
+        <source>Automatically open the Cureoptedcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir le port du client Cureoptedcoin automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1146,8 +1146,8 @@
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a Cureoptedcoins address (e.g. %1)</source>
-        <translation>Entrer une adresse Cureoptedcoins (e.g. %1)</translation>
+        <source>Enter a Cureoptedcoin address (e.g. %1)</source>
+        <translation>Entrer une adresse Cureoptedcoin (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1707,8 +1707,8 @@
         <translation>Demande de paiement expirée.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Cureoptedcoins address</source>
-        <translation>Attention: Adresse Cureoptedcoins Invalide</translation>
+        <source>Warning: Invalid Cureoptedcoin address</source>
+        <translation>Attention: Adresse Cureoptedcoin Invalide</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2275,8 +2275,8 @@
         <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
     </message>
     <message>
-        <source>Cureoptedcoins Core</source>
-        <translation>Cureoptedcoins Core</translation>
+        <source>Cureoptedcoin Core</source>
+        <translation>Cureoptedcoin Core</translation>
     </message>
     <message>
         <source>Importing...</source>

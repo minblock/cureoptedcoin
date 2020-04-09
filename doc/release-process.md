@@ -5,7 +5,7 @@ Before every release candidate:
 
 * Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/bitcoin/bitcoin/blob/master/doc/translation_process.md#synchronising-translations).
 
-* Update manpages, see [gen-manpages.sh](https://github.com/cureoptedcoins-project/cureoptedcoins/blob/master/contrib/devtools/README.md#gen-manpagessh).
+* Update manpages, see [gen-manpages.sh](https://github.com/cureoptedcoin-project/cureoptedcoin/blob/master/contrib/devtools/README.md#gen-manpagessh).
 * Update release candidate version in `configure.ac` (`CLIENT_VERSION_RC`)
 
 Before every minor and major release:
@@ -35,12 +35,12 @@ If you're using the automated script (found in [contrib/gitian-build.py](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/cureoptedcoins-project/gitian.sigs.ltc.git
-    git clone https://github.com/cureoptedcoins-project/cureoptedcoins-detached-sigs.git
+    git clone https://github.com/cureoptedcoin-project/gitian.sigs.ltc.git
+    git clone https://github.com/cureoptedcoin-project/cureoptedcoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/cureoptedcoins-project/cureoptedcoins.git
+    git clone https://github.com/cureoptedcoin-project/cureoptedcoin.git
 
-### Cureoptedcoins maintainers/release engineers, suggestion for writing release notes
+### Cureoptedcoin maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -63,7 +63,7 @@ If you're using the automated script (found in [contrib/gitian-build.py](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./cureoptedcoins
+    pushd ./cureoptedcoin
     export SIGNER="(your Gitian key, ie bluematt, sipa, etc)"
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -98,10 +98,10 @@ Create the macOS SDK tarball, see the [macOS build instructions](build-osx.md#de
 
 NOTE: Gitian is sometimes unable to download files. If you have errors, try the step below.
 
-By default, Gitian will fetch source files as needed. To cache them ahead of time, make sure you have checked out the tag you want to build in cureoptedcoins, then:
+By default, Gitian will fetch source files as needed. To cache them ahead of time, make sure you have checked out the tag you want to build in cureoptedcoin, then:
 
     pushd ./gitian-builder
-    make -C ../cureoptedcoins/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../cureoptedcoin/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -109,50 +109,50 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url cureoptedcoins=/path/to/cureoptedcoins,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url cureoptedcoin=/path/to/cureoptedcoin,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Cureoptedcoins Core for Linux, Windows, and macOS:
+### Build and sign Cureoptedcoin Core for Linux, Windows, and macOS:
 
     export GITIAN_THREADS=2
     export GITIAN_MEMORY=3000
     
     pushd ./gitian-builder
-    ./bin/gbuild --num-make $GITIAN_THREADS --memory $GITIAN_MEMORY --commit cureoptedcoins=v${VERSION} ../cureoptedcoins/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../cureoptedcoins/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/cureoptedcoins-*.tar.gz build/out/src/cureoptedcoins-*.tar.gz ../
+    ./bin/gbuild --num-make $GITIAN_THREADS --memory $GITIAN_MEMORY --commit cureoptedcoin=v${VERSION} ../cureoptedcoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../cureoptedcoin/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/cureoptedcoin-*.tar.gz build/out/src/cureoptedcoin-*.tar.gz ../
 
-    ./bin/gbuild --num-make $GITIAN_THREADS --memory $GITIAN_MEMORY --commit cureoptedcoins=v${VERSION} ../cureoptedcoins/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-win-unsigned --destination ../gitian.sigs.ltc/ ../cureoptedcoins/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/cureoptedcoins-*-win-unsigned.tar.gz inputs/cureoptedcoins-win-unsigned.tar.gz
-    mv build/out/cureoptedcoins-*.zip build/out/cureoptedcoins-*.exe ../
+    ./bin/gbuild --num-make $GITIAN_THREADS --memory $GITIAN_MEMORY --commit cureoptedcoin=v${VERSION} ../cureoptedcoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-win-unsigned --destination ../gitian.sigs.ltc/ ../cureoptedcoin/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/cureoptedcoin-*-win-unsigned.tar.gz inputs/cureoptedcoin-win-unsigned.tar.gz
+    mv build/out/cureoptedcoin-*.zip build/out/cureoptedcoin-*.exe ../
 
-    ./bin/gbuild --num-make $GITIAN_THREADS --memory $GITIAN_MEMORY --commit cureoptedcoins=v${VERSION} ../cureoptedcoins/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../cureoptedcoins/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/cureoptedcoins-*-osx-unsigned.tar.gz inputs/cureoptedcoins-osx-unsigned.tar.gz
-    mv build/out/cureoptedcoins-*.tar.gz build/out/cureoptedcoins-*.dmg ../
+    ./bin/gbuild --num-make $GITIAN_THREADS --memory $GITIAN_MEMORY --commit cureoptedcoin=v${VERSION} ../cureoptedcoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../cureoptedcoin/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/cureoptedcoin-*-osx-unsigned.tar.gz inputs/cureoptedcoin-osx-unsigned.tar.gz
+    mv build/out/cureoptedcoin-*.tar.gz build/out/cureoptedcoin-*.dmg ../
     popd
 
 Build output expected:
 
-  1. source tarball (`cureoptedcoins-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`cureoptedcoins-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`cureoptedcoins-${VERSION}-win[32|64]-setup-unsigned.exe`, `cureoptedcoins-${VERSION}-win[32|64].zip`)
-  4. macOS unsigned installer and dist tarball (`cureoptedcoins-${VERSION}-osx-unsigned.dmg`, `cureoptedcoins-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`cureoptedcoin-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`cureoptedcoin-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`cureoptedcoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `cureoptedcoin-${VERSION}-win[32|64].zip`)
+  4. macOS unsigned installer and dist tarball (`cureoptedcoin-${VERSION}-osx-unsigned.dmg`, `cureoptedcoin-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs.ltc/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
-Add other gitian builders keys to your gpg keyring, and/or refresh keys: See `../cureoptedcoins/contrib/gitian-keys/README.md`.
+Add other gitian builders keys to your gpg keyring, and/or refresh keys: See `../cureoptedcoin/contrib/gitian-keys/README.md`.
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-linux ../cureoptedcoins/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-unsigned ../cureoptedcoins/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-unsigned ../cureoptedcoins/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-linux ../cureoptedcoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-unsigned ../cureoptedcoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-unsigned ../cureoptedcoin/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
@@ -173,22 +173,22 @@ Codesigner only: Create Windows/macOS detached signatures:
 
 Codesigner only: Sign the macOS binary:
 
-    transfer cureoptedcoins-osx-unsigned.tar.gz to macOS for signing
-    tar xf cureoptedcoins-osx-unsigned.tar.gz
+    transfer cureoptedcoin-osx-unsigned.tar.gz to macOS for signing
+    tar xf cureoptedcoin-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf cureoptedcoins-win-unsigned.tar.gz
+    tar xf cureoptedcoin-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/cureoptedcoins-detached-sigs
+    cd ~/cureoptedcoin-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -201,25 +201,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/macOS detached signatures:
 
 - Once the Windows/macOS builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [cureoptedcoins-detached-sigs](https://github.com/cureoptedcoins-project/cureoptedcoins-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [cureoptedcoin-detached-sigs](https://github.com/cureoptedcoin-project/cureoptedcoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed macOS binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../cureoptedcoins/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-osx-signed --destination ../gitian.sigs.ltc/ ../cureoptedcoins/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../cureoptedcoins/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/cureoptedcoins-osx-signed.dmg ../cureoptedcoins-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../cureoptedcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-osx-signed --destination ../gitian.sigs.ltc/ ../cureoptedcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../cureoptedcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/cureoptedcoin-osx-signed.dmg ../cureoptedcoin-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../cureoptedcoins/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-win-signed --destination ../gitian.sigs.ltc/ ../cureoptedcoins/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-signed ../cureoptedcoins/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/cureoptedcoins-*win64-setup.exe ../cureoptedcoins-${VERSION}-win64-setup.exe
-    mv build/out/cureoptedcoins-*win32-setup.exe ../cureoptedcoins-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../cureoptedcoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer "$SIGNER" --release ${VERSION}-win-signed --destination ../gitian.sigs.ltc/ ../cureoptedcoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-signed ../cureoptedcoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/cureoptedcoin-*win64-setup.exe ../cureoptedcoin-${VERSION}-win64-setup.exe
+    mv build/out/cureoptedcoin-*win32-setup.exe ../cureoptedcoin-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed macOS/Windows binaries:
@@ -241,23 +241,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-cureoptedcoins-${VERSION}-aarch64-linux-gnu.tar.gz
-cureoptedcoins-${VERSION}-arm-linux-gnueabihf.tar.gz
-cureoptedcoins-${VERSION}-i686-pc-linux-gnu.tar.gz
-cureoptedcoins-${VERSION}-x86_64-linux-gnu.tar.gz
-cureoptedcoins-${VERSION}-osx64.tar.gz
-cureoptedcoins-${VERSION}-osx.dmg
-cureoptedcoins-${VERSION}.tar.gz
-cureoptedcoins-${VERSION}-win32-setup.exe
-cureoptedcoins-${VERSION}-win32.zip
-cureoptedcoins-${VERSION}-win64-setup.exe
-cureoptedcoins-${VERSION}-win64.zip
+cureoptedcoin-${VERSION}-aarch64-linux-gnu.tar.gz
+cureoptedcoin-${VERSION}-arm-linux-gnueabihf.tar.gz
+cureoptedcoin-${VERSION}-i686-pc-linux-gnu.tar.gz
+cureoptedcoin-${VERSION}-x86_64-linux-gnu.tar.gz
+cureoptedcoin-${VERSION}-osx64.tar.gz
+cureoptedcoin-${VERSION}-osx.dmg
+cureoptedcoin-${VERSION}.tar.gz
+cureoptedcoin-${VERSION}-win32-setup.exe
+cureoptedcoin-${VERSION}-win32.zip
+cureoptedcoin-${VERSION}-win64-setup.exe
+cureoptedcoin-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the cureoptedcoins.org server, nor put them in the torrent*.
+space *do not upload these to the cureoptedcoin.org server, nor put them in the torrent*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -267,25 +267,25 @@ rm SHA256SUMS
 (the digest algorithm is forced to sha256 to avoid confusion of the `Hash:` header that GPG adds with the SHA256 used for the files)
 Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spurious/nonsensical entry.
 
-- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the cureoptedcoins.org server.
+- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the cureoptedcoin.org server.
 
 ```
-- Update cureoptedcoins.org version
+- Update cureoptedcoin.org version
 
 - Update other repositories and websites for new version
 
 - Announce the release:
 
-  - cureoptedcoins-dev mailing list
+  - cureoptedcoin-dev mailing list
 
-  - blog.cureoptedcoins.org blog post
+  - blog.cureoptedcoin.org blog post
 
-  - Update title of #cureoptedcoins and #cureoptedcoins-dev on Freenode IRC
+  - Update title of #cureoptedcoin and #cureoptedcoin-dev on Freenode IRC
 
-  - Optionally twitter, reddit /r/Cureoptedcoins, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/Cureoptedcoin, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/cureoptedcoins-project/cureoptedcoins/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/cureoptedcoin-project/cureoptedcoin/releases/new) with a link to the archived release notes.
 
   - Celebrate

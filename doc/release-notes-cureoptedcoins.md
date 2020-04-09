@@ -1,17 +1,17 @@
-Cureoptedcoins Core version 0.18.1 is now available from:
+Cureoptedcoin Core version 0.18.1 is now available from:
 
-  <<https://download.cureoptedcoins.org/cureoptedcoins-0.18.1/>
+  <<https://download.cureoptedcoin.org/cureoptedcoin-0.18.1/>
 
 This is a major version release, including new features, various bug
 fixes and performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/cureoptedcoins-project/cureoptedcoins/issues>
+  <https://github.com/cureoptedcoin-project/cureoptedcoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://groups.google.com/forum/#!forum/cureoptedcoins-dev>
+  <https://groups.google.com/forum/#!forum/cureoptedcoin-dev>
 
 How to Upgrade
 ==============
@@ -19,7 +19,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has
 completely shut down (which might take a few minutes for older
 versions), then run the installer (on Windows) or just copy over
-`/Applications/Cureoptedcoins-Qt` (on Mac) or `cureoptedcoinsd`/`cureoptedcoins-qt` (on
+`/Applications/Cureoptedcoin-Qt` (on Mac) or `cureoptedcoind`/`cureoptedcoin-qt` (on
 Linux).
 
 The first time you run version 0.15.0 or newer, your chainstate database
@@ -35,16 +35,16 @@ wallet versions are still supported.
 Compatibility
 ==============
 
-Cureoptedcoins Core is supported and extensively tested on operating systems
+Cureoptedcoin Core is supported and extensively tested on operating systems
 using the Linux kernel, macOS 10.10+, and Windows 7 and newer. It is not
-recommended to use Cureoptedcoins Core on unsupported systems.
+recommended to use Cureoptedcoin Core on unsupported systems.
 
-Cureoptedcoins Core should also work on most other Unix-like systems but is not
+Cureoptedcoin Core should also work on most other Unix-like systems but is not
 as frequently tested on them.
 
 From 0.17.0 onwards, macOS <10.10 is no longer supported. 0.17.0 is
 built using Qt 5.9.x, which doesn't support versions of macOS older than
-10.10. Additionally, Cureoptedcoins Core does not yet change appearance when
+10.10. Additionally, Cureoptedcoin Core does not yet change appearance when
 macOS "dark mode" is activated.
 
 In addition to previously-supported CPU platforms, this release's
@@ -86,7 +86,7 @@ Configuration option changes
   messages that ZMQ will queue in memory (the "high water mark") before
   dropping additional messages.  The default value is 1,000, the same as
   was used for previous releases.  See the [ZMQ
-  documentation](https://github.com/cureoptedcoins-project/cureoptedcoins/blob/master/doc/zmq.md#usage)
+  documentation](https://github.com/cureoptedcoin-project/cureoptedcoin/blob/master/doc/zmq.md#usage)
   for details.
 
 - The `rpcallowip` option can no longer be used to automatically listen
@@ -110,7 +110,7 @@ Configuration option changes
   disconnect/ban behavior will not cause a node that is whitelisting
   another to be dropped by peers.  Users can still explicitly enable
   this behavior with the command line option (and may want to consider
-  [contacting](mailto:contact@cureoptedcoins.org) the Cureoptedcoins Core
+  [contacting](mailto:contact@cureoptedcoin.org) the Cureoptedcoin Core
   project to let us know about their use-case, as this feature could be
   deprecated in the future).
 
@@ -118,24 +118,24 @@ Configuration option changes
 Documentation
 -------------
 
-- A new short [document](https://github.com/cureoptedcoins-project/cureoptedcoins/blob/master/doc/JSON-RPC-interface.md)
+- A new short [document](https://github.com/cureoptedcoin-project/cureoptedcoin/blob/master/doc/JSON-RPC-interface.md)
   about the JSON-RPC interface describes cases where the results of an
   RPC might contain inconsistencies between data sourced from different
   subsystems, such as wallet state and mempool state.  A note is added
-  to the [REST interface documentation](https://github.com/cureoptedcoins-project/cureoptedcoins/blob/master/doc/REST-interface.md)
+  to the [REST interface documentation](https://github.com/cureoptedcoin-project/cureoptedcoin/blob/master/doc/REST-interface.md)
   indicating that the same rules apply.
 
 - Further information is added to the [JSON-RPC
-  documentation](https://github.com/cureoptedcoins-project/cureoptedcoins/blob/master/doc/JSON-RPC-interface.md)
+  documentation](https://github.com/cureoptedcoin-project/cureoptedcoin/blob/master/doc/JSON-RPC-interface.md)
   about how to secure this interface.
 
-- A new [document](https://github.com/cureoptedcoins-project/cureoptedcoins/blob/master/doc/cureoptedcoins-conf.md)
-  about the `cureoptedcoins.conf` file describes how to use it to configure
-  Cureoptedcoins Core.
+- A new [document](https://github.com/cureoptedcoin-project/cureoptedcoin/blob/master/doc/cureoptedcoin-conf.md)
+  about the `cureoptedcoin.conf` file describes how to use it to configure
+  Cureoptedcoin Core.
 
-- A new document introduces Cureoptedcoins Core's BIP174 [Partially-Signed
-  Cureoptedcoins Transactions
-  (PSBT)](https://github.com/cureoptedcoins-project/cureoptedcoins/blob/master/doc/psbt.md)
+- A new document introduces Cureoptedcoin Core's BIP174 [Partially-Signed
+  Cureoptedcoin Transactions
+  (PSBT)](https://github.com/cureoptedcoin-project/cureoptedcoin/blob/master/doc/psbt.md)
   interface, which is used to allow multiple programs to collaboratively
   work to create, sign, and broadcast new transactions.  This is useful
   for offline (cold storage) wallets, multisig wallets, coinjoin
@@ -143,7 +143,7 @@ Documentation
   to interact to generate a complete transaction.
 
 - The [output script
-  descriptor](https://github.com/cureoptedcoins-project/cureoptedcoins/blob/master/doc/descriptors.md)
+  descriptor](https://github.com/cureoptedcoin-project/cureoptedcoin/blob/master/doc/descriptors.md)
   documentation has been updated with information about new features in
   this still-developing language for describing the output scripts that
   a wallet or other program wants to receive notifications for, such as
@@ -156,15 +156,15 @@ Build system changes
 --------------------
 
 - A new `--disable-bip70` option may be passed to `./configure` to
-  prevent Cureoptedcoins-Qt from being built with support for the BIP70 payment
+  prevent Cureoptedcoin-Qt from being built with support for the BIP70 payment
   protocol or from linking libssl.  As the payment protocol has exposed
-  Cureoptedcoins Core to libssl vulnerabilities in the past, builders who don't
+  Cureoptedcoin Core to libssl vulnerabilities in the past, builders who don't
   need BIP70 support are encouraged to use this option to reduce their
   exposure to future vulnerabilities.
 
 - The minimum required version of Qt (when building the GUI) has been
   increased from 5.2 to 5.5.1 (the [depends
-  system](https://github.com/cureoptedcoins-project/cureoptedcoins/blob/master/depends/README.md)
+  system](https://github.com/cureoptedcoin-project/cureoptedcoin/blob/master/depends/README.md)
   provides 5.9.7)
 
 New RPCs
@@ -182,7 +182,7 @@ New RPCs
   they've been running.
 
 - `deriveaddresses` returns one or more addresses corresponding to an
-  [output descriptor](https://github.com/cureoptedcoins-project/cureoptedcoins/blob/master/doc/descriptors.md).
+  [output descriptor](https://github.com/cureoptedcoin-project/cureoptedcoin/blob/master/doc/descriptors.md).
 
 - `getdescriptorinfo` accepts a descriptor and returns information about
   it, including its computed checksum.
@@ -249,7 +249,7 @@ in the Low-level Changes section below.
   ignored or are inconsistent, if there are any.
 
 - `getaddressinfo` now returns an additional `solvable` boolean field
-  when Cureoptedcoins Core knows enough about the address's scriptPubKey,
+  when Cureoptedcoin Core knows enough about the address's scriptPubKey,
   optional redeemScript, and optional witnessScript in order for the
   wallet to be able to generate an unsigned input spending funds sent to
   that address.
@@ -263,7 +263,7 @@ in the Low-level Changes section below.
 - `importprivkey` will preserve previously-set labels for addresses or
   public keys corresponding to the private key being imported.  For
   example, if you imported a watch-only address with the label "cold
-  wallet" in earlier releases of Cureoptedcoins Core, subsequently importing
+  wallet" in earlier releases of Cureoptedcoin Core, subsequently importing
   the private key would default to resetting the address's label to the
   default empty-string label ("").  In this release, the previous label
   of "cold wallet" will be retained.  If you optionally specify any
@@ -291,7 +291,7 @@ in the Low-level Changes section below.
   origin information imported through `importmulti` will have their key
   origin information stored in the wallet for use with creating PSBTs.
   More information about descriptors can be found
-  [here](https://github.com/cureoptedcoins-project/cureoptedcoins/blob/master/doc/descriptors.md).
+  [here](https://github.com/cureoptedcoin-project/cureoptedcoin/blob/master/doc/descriptors.md).
 
 - `listunspent` has been modified so that it also returns
   `witnessScript`, the witness script in the case of a P2WSH or
@@ -314,7 +314,7 @@ Deprecated or removed RPCs
 - The 'account' API is removed after being deprecated in v0.17.  The
   'label' API was introduced in v0.17 as a replacement for accounts.
   See the [release notes from
-  v0.17](https://github.com/cureoptedcoins-project/cureoptedcoins/blob/master/doc/release-notes/release-notes-0.17.0.md#label-and-account-apis-for-wallet)
+  v0.17](https://github.com/cureoptedcoin-project/cureoptedcoin/blob/master/doc/release-notes/release-notes-0.17.0.md#label-and-account-apis-for-wallet)
   for a full description of the changes from the 'account' API to the
   'label' API.
 
@@ -330,7 +330,7 @@ Deprecated or removed RPCs
   require or use the wallet component. Calling `generatetoaddress` with
   an address returned by the `getnewaddress` RPC gives the same
   functionality as the old `generate` RPC.  To continue using `generate`
-  in this version, restart cureoptedcoinsd with the `-deprecatedrpc=generate`
+  in this version, restart cureoptedcoind with the `-deprecatedrpc=generate`
   configuration option.
 
 - Be reminded that parts of the `validateaddress` command have been
@@ -377,7 +377,7 @@ Graphical User Interface (GUI)
 Tools
 -----
 
-- A new `cureoptedcoins-wallet` tool is now distributed alongside Cureoptedcoins
+- A new `cureoptedcoin-wallet` tool is now distributed alongside Cureoptedcoin
   Core's other executables.  Without needing to use any RPCs, this tool
   can currently create a new wallet file or display some basic
   information about an existing wallet, such as whether the wallet is
@@ -387,24 +387,24 @@ Tools
 Planned changes
 ===============
 
-This section describes planned changes to Cureoptedcoins Core that may affect
-other Cureoptedcoins software and services.
+This section describes planned changes to Cureoptedcoin Core that may affect
+other Cureoptedcoin software and services.
 
-- Since version 0.16.0, Cureoptedcoins Core’s built-in wallet has defaulted to
+- Since version 0.16.0, Cureoptedcoin Core’s built-in wallet has defaulted to
   generating P2SH-wrapped segwit addresses when users want to receive
   payments. These addresses are backwards compatible with all
-  widely-used software.  Starting with Cureoptedcoins Core 0.20 (expected about
-  a year after 0.18), Cureoptedcoins Core will default to native segwit
+  widely-used software.  Starting with Cureoptedcoin Core 0.20 (expected about
+  a year after 0.18), Cureoptedcoin Core will default to native segwit
   addresses (bech32) that provide additional fee savings and other
   benefits. Currently, many wallets and services already support sending
-  to bech32 addresses, and if the Cureoptedcoins Core project sees enough
+  to bech32 addresses, and if the Cureoptedcoin Core project sees enough
   additional adoption, it will instead default to bech32 receiving
-  addresses in Cureoptedcoins Core 0.19 (approximately November 2019).
+  addresses in Cureoptedcoin Core 0.19 (approximately November 2019).
   P2SH-wrapped segwit addresses will continue to be provided if the user
   requests them in the GUI or by RPC, and anyone who doesn’t want the
   update will be able to configure their default address type.
   (Similarly, pioneering users who want to change their default now may
-  set the `addresstype=bech32` configuration option in any Cureoptedcoins Core
+  set the `addresstype=bech32` configuration option in any Cureoptedcoin Core
   release from 0.16.0 up.)
 
 Deprecated P2P messages
@@ -466,7 +466,7 @@ Network
   a misbehaving node will be disconnected to make room for nodes without
   a history of problems (unless the misbehaving node helps your node in
   some other way, such as by connecting to a part of the Internet from
-  which you don't have many other peers).  Previously, Cureoptedcoins Core
+  which you don't have many other peers).  Previously, Cureoptedcoin Core
   banned the IP addresses of misbehaving peers for a period of time
   (default of 1 day); this was easily circumvented by attackers with
   multiple IP addresses. If you manually ban a peer, such as by using
@@ -485,18 +485,18 @@ Wallet
   software. Instead such wallets will be completely unloaded and
   reloaded to achieve the same effect.
 
-- A sub-project of Cureoptedcoins Core now provides Hardware Wallet Interaction
+- A sub-project of Cureoptedcoin Core now provides Hardware Wallet Interaction
   (HWI) scripts that allow command-line users to use several popular
-  hardware key management devices with Cureoptedcoins Core.  See their [project
+  hardware key management devices with Cureoptedcoin Core.  See their [project
   page](https://github.com/bitcoin-core/HWI#readme) for details.
 
 Security
 --------
 
 - This release changes the Random Number Generator (RNG) used from
-  OpenSSL to Cureoptedcoins Core's own implementation, although entropy
-  gathered by Cureoptedcoins Core is fed out to OpenSSL and then read back in
-  when the program needs strong randomness. This moves Cureoptedcoins Core a
+  OpenSSL to Cureoptedcoin Core's own implementation, although entropy
+  gathered by Cureoptedcoin Core is fed out to OpenSSL and then read back in
+  when the program needs strong randomness. This moves Cureoptedcoin Core a
   little closer to no longer needing to depend on OpenSSL, a dependency
   that has caused security issues in the past.  The new implementation
   gathers entropy from multiple sources, including from hardware
@@ -505,7 +505,7 @@ Security
 Changes for particular platforms
 --------------------------------
 
-- On macOS, Cureoptedcoins Core now opts out of application CPU throttling
+- On macOS, Cureoptedcoin Core now opts out of application CPU throttling
   ("app nap") during initial blockchain download, when catching up from
   over 100 blocks behind the current chain tip, or when reindexing chain
   data. This helps prevent these operations from taking an excessively

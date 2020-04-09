@@ -7,11 +7,11 @@ BUILDDIR=${BUILDDIR:-$TOPDIR}
 BINDIR=${BINDIR:-$BUILDDIR/src}
 MANDIR=${MANDIR:-$TOPDIR/doc/man}
 
-BITCOIND=${BITCOIND:-$BINDIR/cureoptedcoinsd}
-BITCOINCLI=${BITCOINCLI:-$BINDIR/cureoptedcoins-cli}
-BITCOINTX=${BITCOINTX:-$BINDIR/cureoptedcoins-tx}
-WALLET_TOOL=${WALLET_TOOL:-$BINDIR/cureoptedcoins-wallet}
-BITCOINQT=${BITCOINQT:-$BINDIR/qt/cureoptedcoins-qt}
+BITCOIND=${BITCOIND:-$BINDIR/cureoptedcoind}
+BITCOINCLI=${BITCOINCLI:-$BINDIR/cureoptedcoin-cli}
+BITCOINTX=${BITCOINTX:-$BINDIR/cureoptedcoin-tx}
+WALLET_TOOL=${WALLET_TOOL:-$BINDIR/cureoptedcoin-wallet}
+BITCOINQT=${BITCOINQT:-$BINDIR/qt/cureoptedcoin-qt}
 
 [ ! -x $BITCOIND ] && echo "$BITCOIND not found or not executable." && exit 1
 

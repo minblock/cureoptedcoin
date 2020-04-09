@@ -1,5 +1,5 @@
 ---
-name: "cureoptedcoins-dmg-signer"
+name: "cureoptedcoin-dmg-signer"
 suites:
 - "bionic"
 architectures:
@@ -7,10 +7,10 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/cureoptedcoins-project/cureoptedcoins-detached-sigs.git"
+- "url": "https://github.com/cureoptedcoin-project/cureoptedcoin-detached-sigs.git"
   "dir": "signature"
 files:
-- "cureoptedcoins-osx-unsigned.tar.gz"
+- "cureoptedcoin-osx-unsigned.tar.gz"
 script: |
   set -e -o pipefail
 
@@ -29,8 +29,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=cureoptedcoins-osx-unsigned.tar.gz
-  SIGNED=cureoptedcoins-osx-signed.dmg
+  UNSIGNED=cureoptedcoin-osx-unsigned.tar.gz
+  SIGNED=cureoptedcoin-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"

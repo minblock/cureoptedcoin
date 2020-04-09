@@ -97,9 +97,9 @@ static int AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || HelpRequested(gArgs)) {
         // First part of help message is specific to this utility
-        std::string strUsage = PACKAGE_NAME " cureoptedcoins-tx utility version " + FormatFullVersion() + "\n\n" +
-            "Usage:  cureoptedcoins-tx [options] <hex-tx> [commands]  Update hex-encoded cureoptedcoins transaction\n" +
-            "or:     cureoptedcoins-tx [options] -create [commands]   Create hex-encoded cureoptedcoins transaction\n" +
+        std::string strUsage = PACKAGE_NAME " cureoptedcoin-tx utility version " + FormatFullVersion() + "\n\n" +
+            "Usage:  cureoptedcoin-tx [options] <hex-tx> [commands]  Update hex-encoded cureoptedcoin transaction\n" +
+            "or:     cureoptedcoin-tx [options] -create [commands]   Create hex-encoded cureoptedcoin transaction\n" +
             "\n";
         strUsage += gArgs.GetHelpMessage();
 

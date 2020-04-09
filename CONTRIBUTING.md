@@ -1,7 +1,7 @@
-Contributing to Cureoptedcoins Core
+Contributing to Cureoptedcoin Core
 ============================
 
-The Cureoptedcoins Core project operates an open contributor model where anyone is
+The Cureoptedcoin Core project operates an open contributor model where anyone is
 welcome to contribute towards development in the form of peer review, testing
 and patches. This document explains the practical process and guidelines for
 contributing.
@@ -17,15 +17,15 @@ release cycle, overall merging, moderation and appointment of maintainers.
 Communication Channels
 ----------------------
 
-Most communication about Cureoptedcoins Core development happens on IRC, in the
-#cureoptedcoins-dev channel on Freenode. The easiest way to participate on IRC is
+Most communication about Cureoptedcoin Core development happens on IRC, in the
+#cureoptedcoin-dev channel on Freenode. The easiest way to participate on IRC is
 with the web client, [webchat.freenode.net](https://webchat.freenode.net/).
 
 Discussion about code base improvements happens in GitHub issues and on pull
 requests.
 
 The developer
-[mailing list](https://groups.google.com/forum/#!forum/cureoptedcoins-dev)
+[mailing list](https://groups.google.com/forum/#!forum/cureoptedcoin-dev)
 should be used to discuss complicated or controversial changes before working on
 a patch set.
 
@@ -74,12 +74,12 @@ the pull request affects. Valid areas as:
 
   - *Consensus* for changes to consensus critical code
   - *Docs* for changes to the documentation
-  - *Qt* for changes to cureoptedcoins-qt
+  - *Qt* for changes to cureoptedcoin-qt
   - *Mining* for changes to the mining code
   - *Net* or *P2P* for changes to the peer-to-peer network code
   - *RPC/REST/ZMQ* for changes to the RPC, REST or ZMQ APIs
   - *Scripts and tools* for changes to the scripts and tools
-  - *Tests* for changes to the cureoptedcoins unit tests or QA tests
+  - *Tests* for changes to the cureoptedcoin unit tests or QA tests
   - *Trivial* should **only** be used for PRs that do not change generated
     executable code. Notably, refactors (change of function arguments and code
     reorganization) and changes in behavior should **not** be marked as trivial.
@@ -192,11 +192,11 @@ workload on reviewing.
 "Decision Making" Process
 -------------------------
 
-The following applies to code changes to the Cureoptedcoins Core project (and related
-projects such as libsecp256k1), and is not to be confused with overall Cureoptedcoins
+The following applies to code changes to the Cureoptedcoin Core project (and related
+projects such as libsecp256k1), and is not to be confused with overall Cureoptedcoin
 Network Protocol consensus changes.
 
-Whether a pull request is merged into Cureoptedcoins Core rests with the project merge
+Whether a pull request is merged into Cureoptedcoin Core rests with the project merge
 maintainers and ultimately the project lead.
 
 Maintainers will take into consideration if a patch is in line with the general
@@ -214,7 +214,7 @@ In general, all pull requests must:
   - Where bugs are fixed, where possible, there should be unit tests
     demonstrating the bug and also proving the fix. This helps prevent regression.
 
-Patches that change Cureoptedcoins consensus rules are considerably more involved than
+Patches that change Cureoptedcoin consensus rules are considerably more involved than
 normal because they affect the entire ecosystem and so must be preceded by
 extensive mailing list discussions and have a numbered BIP. While each case will
 be different, one should be prepared to expend more time and effort than for
@@ -255,7 +255,7 @@ higher in terms of discussion and peer review requirements, keeping in mind that
 mistakes could be very costly to the wider community. This includes refactoring
 of consensus critical code.
 
-Where a patch set proposes to change the Cureoptedcoins consensus, it must have been
+Where a patch set proposes to change the Cureoptedcoin consensus, it must have been
 discussed extensively on the mailing list and IRC, be accompanied by a widely
 discussed BIP and have a generally widely perceived technical consensus of being
 a worthwhile change based on the judgement of the maintainers.
@@ -295,7 +295,7 @@ about:
 Release Policy
 --------------
 
-The project leader is the release manager for each Cureoptedcoins Core release.
+The project leader is the release manager for each Cureoptedcoin Core release.
 
 Copyright
 ---------

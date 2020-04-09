@@ -1,41 +1,41 @@
-Cureoptedcoins Core
+Cureoptedcoin Core
 =============
 
 Setup
 ---------------------
-Cureoptedcoins Core is the original Cureoptedcoins client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Cureoptedcoins transactions, which requires approximately 22 gigabytes of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+Cureoptedcoin Core is the original Cureoptedcoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Cureoptedcoin transactions, which requires approximately 22 gigabytes of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Cureoptedcoins Core, visit [cureoptedcoins.org](https://cureoptedcoins.org/).
+To download Cureoptedcoin Core, visit [cureoptedcoin.org](https://cureoptedcoin.org/).
 
 Running
 ---------------------
-The following are some helpful notes on how to run Cureoptedcoins Core on your native platform.
+The following are some helpful notes on how to run Cureoptedcoin Core on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/cureoptedcoins-qt` (GUI) or
-- `bin/cureoptedcoinsd` (headless)
+- `bin/cureoptedcoin-qt` (GUI) or
+- `bin/cureoptedcoind` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run cureoptedcoins-qt.exe.
+Unpack the files into a directory, and then run cureoptedcoin-qt.exe.
 
 ### macOS
 
-Drag Cureoptedcoins Core to your applications folder, and then run Cureoptedcoins Core.
+Drag Cureoptedcoin Core to your applications folder, and then run Cureoptedcoin Core.
 
 ### Need Help?
 
-* See the documentation at the [Cureoptedcoins Wiki](https://cureoptedcoins.info/)
+* See the documentation at the [Cureoptedcoin Wiki](https://cureoptedcoin.info/)
 for help and more information.
-* Ask for help on [#cureoptedcoins](http://webchat.freenode.net?channels=cureoptedcoins) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=cureoptedcoins).
-* Ask for help on the [CureoptedcoinsTalk](https://cureoptedcoinstalk.io/) forums, in the [Technical Support section](https://cureoptedcoinstalk.io/c/technical-support).
+* Ask for help on [#cureoptedcoin](http://webchat.freenode.net?channels=cureoptedcoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=cureoptedcoin).
+* Ask for help on the [CureoptedcoinTalk](https://cureoptedcointalk.io/) forums, in the [Technical Support section](https://cureoptedcointalk.io/c/technical-support).
 
 Building
 ---------------------
-The following are developer notes on how to build Cureoptedcoins Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Cureoptedcoin Core on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [Dependencies](dependencies.md)
 - [macOS Build Notes](build-osx.md)
@@ -48,7 +48,7 @@ The following are developer notes on how to build Cureoptedcoins Core on your na
 
 Development
 ---------------------
-The Cureoptedcoins repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Cureoptedcoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Productivity Notes](productivity.md)
@@ -65,8 +65,8 @@ The Cureoptedcoins repo's [root README](/README.md) contains relevant informatio
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [CureoptedcoinsTalk](https://cureoptedcoinstalk.io/) forums.
-* Discuss general Cureoptedcoins development on #cureoptedcoins-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=cureoptedcoins-dev.
+* Discuss on the [CureoptedcoinTalk](https://cureoptedcointalk.io/) forums.
+* Discuss general Cureoptedcoin development on #cureoptedcoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=cureoptedcoin-dev.
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

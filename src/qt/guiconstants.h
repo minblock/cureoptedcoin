@@ -46,11 +46,11 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 36
 
-#define QAPP_ORG_NAME "Cureoptedcoins"
-#define QAPP_ORG_DOMAIN "cureoptedcoins.org"
-#define QAPP_APP_NAME_DEFAULT "Cureoptedcoins-Qt"
-#define QAPP_APP_NAME_TESTNET "Cureoptedcoins-Qt-testnet"
-#define QAPP_APP_NAME_REGTEST "Cureoptedcoins-Qt-regtest"
+#define QAPP_ORG_NAME "Cureoptedcoin"
+#define QAPP_ORG_DOMAIN "cureoptedcoin.org"
+#define QAPP_APP_NAME_DEFAULT "Cureoptedcoin-Qt"
+#define QAPP_APP_NAME_TESTNET "Cureoptedcoin-Qt-testnet"
+#define QAPP_APP_NAME_REGTEST "Cureoptedcoin-Qt-regtest"
 
 /* One gigabyte (GB) in bytes */
 static constexpr uint64_t GB_BYTES{1000000000};

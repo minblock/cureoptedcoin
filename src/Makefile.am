@@ -82,18 +82,18 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += cureoptedcoinsd
+  bin_PROGRAMS += cureoptedcoind
 endif
 
 if BUILD_BITCOIN_CLI
-  bin_PROGRAMS += cureoptedcoins-cli
+  bin_PROGRAMS += cureoptedcoin-cli
 endif
 if BUILD_BITCOIN_TX
-  bin_PROGRAMS += cureoptedcoins-tx
+  bin_PROGRAMS += cureoptedcoin-tx
 endif
 if ENABLE_WALLET
 if BUILD_BITCOIN_WALLET
-  bin_PROGRAMS += cureoptedcoins-wallet
+  bin_PROGRAMS += cureoptedcoin-wallet
 endif
 endif
 
@@ -485,16 +485,16 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-cureoptedcoinsd_SOURCES = bitcoind.cpp
-cureoptedcoinsd_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-cureoptedcoinsd_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-cureoptedcoinsd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+cureoptedcoind_SOURCES = bitcoind.cpp
+cureoptedcoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+cureoptedcoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+cureoptedcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-cureoptedcoinsd_SOURCES += bitcoind-res.rc
+cureoptedcoind_SOURCES += bitcoind-res.rc
 endif
 
-cureoptedcoinsd_LDADD = \
+cureoptedcoind_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_WALLET) \
   $(LIBBITCOIN_SERVER) \
@@ -509,38 +509,38 @@ cureoptedcoinsd_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-cureoptedcoinsd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+cureoptedcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # bitcoin-cli binary #
-cureoptedcoins_cli_SOURCES = bitcoin-cli.cpp
-cureoptedcoins_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-cureoptedcoins_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-cureoptedcoins_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+cureoptedcoin_cli_SOURCES = bitcoin-cli.cpp
+cureoptedcoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+cureoptedcoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+cureoptedcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-cureoptedcoins_cli_SOURCES += bitcoin-cli-res.rc
+cureoptedcoin_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-cureoptedcoins_cli_LDADD = \
+cureoptedcoin_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-cureoptedcoins_cli_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+cureoptedcoin_cli_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # bitcoin-tx binary #
-cureoptedcoins_tx_SOURCES = bitcoin-tx.cpp
-cureoptedcoins_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-cureoptedcoins_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-cureoptedcoins_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+cureoptedcoin_tx_SOURCES = bitcoin-tx.cpp
+cureoptedcoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+cureoptedcoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+cureoptedcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-cureoptedcoins_tx_SOURCES += bitcoin-tx-res.rc
+cureoptedcoin_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-cureoptedcoins_tx_LDADD = \
+cureoptedcoin_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -548,20 +548,20 @@ cureoptedcoins_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-cureoptedcoins_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+cureoptedcoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoin-wallet binary #
-cureoptedcoins_wallet_SOURCES = bitcoin-wallet.cpp
-cureoptedcoins_wallet_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-cureoptedcoins_wallet_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-cureoptedcoins_wallet_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+cureoptedcoin_wallet_SOURCES = bitcoin-wallet.cpp
+cureoptedcoin_wallet_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+cureoptedcoin_wallet_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+cureoptedcoin_wallet_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-cureoptedcoins_wallet_SOURCES += bitcoin-wallet-res.rc
+cureoptedcoin_wallet_SOURCES += bitcoin-wallet-res.rc
 endif
 
-cureoptedcoins_wallet_LDADD = \
+cureoptedcoin_wallet_LDADD = \
   $(LIBBITCOIN_WALLET_TOOL) \
   $(LIBBITCOIN_WALLET) \
   $(LIBBITCOIN_SERVER) \
@@ -574,7 +574,7 @@ cureoptedcoins_wallet_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-cureoptedcoins_wallet_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+cureoptedcoin_wallet_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
 #
 
 # bitcoinconsensus library #

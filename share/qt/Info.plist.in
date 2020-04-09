@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Cureoptedcoins-Qt</string>
+  <string>Cureoptedcoin-Qt</string>
   
   <key>CFBundleName</key>
-  <string>Cureoptedcoins-Qt</string>
+  <string>Cureoptedcoin-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.cureoptedcoins.Cureoptedcoins-Qt</string>
+  <string>org.cureoptedcoin.Cureoptedcoin-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.cureoptedcoins.CureoptedcoinsPayment</string>
+      <string>org.cureoptedcoin.CureoptedcoinPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>cureoptedcoins</string>
+        <string>cureoptedcoin</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.cureoptedcoins.paymentrequest</string>
+      <string>org.cureoptedcoin.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Cureoptedcoins payment request</string>
+      <string>Cureoptedcoin payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-cureoptedcoins-payment-request</string>
+        <string>application/x-cureoptedcoin-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>cureoptedcoinspaymentrequest</string>
+          <string>cureoptedcoinpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.cureoptedcoins.paymentrequest</string>
+        <string>org.cureoptedcoin.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

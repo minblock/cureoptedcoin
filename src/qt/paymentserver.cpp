@@ -48,15 +48,15 @@
 #include <QUrlQuery>
 
 const int BITCOIN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
-const QString BITCOIN_IPC_PREFIX("cureoptedcoins:");
+const QString BITCOIN_IPC_PREFIX("cureoptedcoin:");
 #ifdef ENABLE_BIP70
 // BIP70 payment protocol messages
 const char* BIP70_MESSAGE_PAYMENTACK = "PaymentACK";
 const char* BIP70_MESSAGE_PAYMENTREQUEST = "PaymentRequest";
 // BIP71 payment protocol media types
-const char* BIP71_MIMETYPE_PAYMENT = "application/cureoptedcoins-payment";
-const char* BIP71_MIMETYPE_PAYMENTACK = "application/cureoptedcoins-paymentack";
-const char* BIP71_MIMETYPE_PAYMENTREQUEST = "application/cureoptedcoins-paymentrequest";
+const char* BIP71_MIMETYPE_PAYMENT = "application/cureoptedcoin-payment";
+const char* BIP71_MIMETYPE_PAYMENTACK = "application/cureoptedcoin-paymentack";
+const char* BIP71_MIMETYPE_PAYMENTREQUEST = "application/cureoptedcoin-paymentrequest";
 #endif
 
 //
@@ -66,7 +66,7 @@ const char* BIP71_MIMETYPE_PAYMENTREQUEST = "application/cureoptedcoins-paymentr
 //
 static QString ipcServerName()
 {
-    QString name("CureoptedcoinsQt");
+    QString name("CureoptedcoinQt");
 
     // Append a simple hash of the datadir
     // Note that GetDataDir(true) returns a different path
@@ -224,7 +224,7 @@ PaymentServer::PaymentServer(QObject* parent, bool startLocalServer) :
         if (!uriServer->listen(name)) {
             // constructor is called early in init, so don't use "Q_EMIT message()" here
             QMessageBox::critical(nullptr, tr("Payment request error"),
-                tr("Cannot start cureoptedcoins: click-to-pay handler"));
+                tr("Cannot start cureoptedcoin: click-to-pay handler"));
         }
         else {
             connect(uriServer, &QLocalServer::newConnection, this, &PaymentServer::handleURIConnection);
@@ -284,9 +284,9 @@ void PaymentServer::handleURIOrFile(const QString& s)
         return;
     }
 
-    if (s.startsWith("cureoptedcoins://", Qt::CaseInsensitive))
+    if (s.startsWith("cureoptedcoin://", Qt::CaseInsensitive))
     {
-        Q_EMIT message(tr("URI handling"), tr("'cureoptedcoins://' is not a valid URI. Use 'cureoptedcoins:' instead."),
+        Q_EMIT message(tr("URI handling"), tr("'cureoptedcoin://' is not a valid URI. Use 'cureoptedcoin:' instead."),
             CClientUIInterface::MSG_ERROR);
     }
     else if (s.startsWith(BITCOIN_IPC_PREFIX, Qt::CaseInsensitive)) // bitcoin: URI
@@ -340,7 +340,7 @@ void PaymentServer::handleURIOrFile(const QString& s)
             }
             else
                 Q_EMIT message(tr("URI handling"),
-                    tr("URI cannot be parsed! This can be caused by an invalid Cureoptedcoins address or malformed URI parameters."),
+                    tr("URI cannot be parsed! This can be caused by an invalid Cureoptedcoin address or malformed URI parameters."),
                     CClientUIInterface::ICON_WARNING);
 
             return;
