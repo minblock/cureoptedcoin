@@ -77,13 +77,13 @@ public:
         consensus.nRuleChangeActivationThreshold = 6048; // 75% of 8064
         consensus.nMinerConfirmationWindow = 8064; // nPowTargetTimespan / nPowTargetSpacing * 4
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
-        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
-        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
+        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1587249759; // April 18th 2020
+        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1628410088; // 21-08-08 08:08:08 UTC
 
         // Deployment of BIP68, BIP112, and BIP113.
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1485561600; // January 28, 2017
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1517356801; // January 31st, 2018
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1587249759; // April 18th 2020
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1628410088; // 21-08-08 08:08:08 UTC
 
         // Deployment of SegWit (BIP141, BIP143, and BIP147)
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
@@ -94,7 +94,7 @@ public:
         consensus.nMinimumChainWork = uint256S("0x00");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0xb34a457c601ef8ce3294116e3296078797be7ded1b0d12515395db9ab5e93ab8"); //1683528
+        consensus.defaultAssumeValid = uint256S("0x8301b789cd06cbb434524741275074f1c4bd2f0efb00dd93a0f12373106e9924"); //0
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -105,14 +105,10 @@ public:
         pchMessageStart[1] = 0xc0;
         pchMessageStart[2] = 0xb6;
         pchMessageStart[3] = 0xdb;
-<<<<<<< HEAD
-        nDefaultPort = 23999;
-=======
         nDefaultPort = 1001;
->>>>>>> ebd9da1d9fc8778d354107ff010a20998672318f
         nPruneAfterHeight = 100000;
-        m_assumed_blockchain_size = 22;
-        m_assumed_chain_state_size = 3;
+        m_assumed_blockchain_size = 0;
+        m_assumed_chain_state_size = 0;
 
         genesis = CreateGenesisBlock(1587458078, 1120065, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
