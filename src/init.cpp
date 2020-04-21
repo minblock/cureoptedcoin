@@ -555,7 +555,7 @@ void SetupServerArgs()
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/cureoptedcoin-project/cureoptedcoin>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/minblock/cureoptedcoin>";
     const std::string URL_WEBSITE = "<https://cureoptedcoin.org>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") + "\n" +

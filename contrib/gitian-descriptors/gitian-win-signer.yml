@@ -9,7 +9,7 @@ packages:
 - "libssl1.0-dev"
 - "autoconf"
 remotes:
-- "url": "https://github.com/cureoptedcoin-project/cureoptedcoin-detached-sigs.git"
+- "url": "https://github.com/minblock/cureoptedcoin-detached-sigs.git"
   "dir": "signature"
 files:
 - "osslsigncode-1.7.1.tar.gz"

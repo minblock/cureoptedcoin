@@ -1,7 +1,7 @@
 Cureoptedcoin Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/cureoptedcoin-project/cureoptedcoin.svg?branch=master)](https://travis-ci.org/cureoptedcoin-project/cureoptedcoin)
+[![Build Status](https://travis-ci.org/minblock/cureoptedcoin.svg?branch=master)](https://travis-ci.org/minblock/cureoptedcoin)
 
 https://cureoptedcoin.org
 
@@ -27,7 +27,7 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/cureoptedcoin-project/cureoptedcoin/tags) are created
+completely stable. [Tags](https://github.com/minblock/cureoptedcoin/tags) are created
 regularly to indicate new official, stable release versions of Cureoptedcoin Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md)

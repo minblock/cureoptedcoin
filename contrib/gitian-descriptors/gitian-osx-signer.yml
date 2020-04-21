@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/cureoptedcoin-project/cureoptedcoin-detached-sigs.git"
+- "url": "https://github.com/minblock/cureoptedcoin-detached-sigs.git"
   "dir": "signature"
 files:
 - "cureoptedcoin-osx-unsigned.tar.gz"

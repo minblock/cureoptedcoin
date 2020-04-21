@@ -43,7 +43,7 @@ Build Cureoptedcoin Core
 
 1. Clone the Cureoptedcoin Core source code:
 
-        git clone https://github.com/cureoptedcoin-project/cureoptedcoin
+        git clone https://github.com/minblock/cureoptedcoin
         cd cureoptedcoin
 
 2.  Build Cureoptedcoin Core:
